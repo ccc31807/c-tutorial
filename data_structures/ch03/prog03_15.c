@@ -8,10 +8,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <stdio.h>
 int main()
 {
     int arr[]={1,2,3,4,5,6,7,8,9};
+    //illustrate pointer arithmetic with a long int type
+    //long int *ptr1, *ptr2;
     int *ptr1, *ptr2;
     ptr1 = arr;
     ptr2 = &arr[8];
