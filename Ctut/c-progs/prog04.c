@@ -27,17 +27,17 @@ int main(int argc, char *argv[])
 
     //print variables and sizes
     printf("\nPrinting values and size of variables:\n");
-    printf("short int si = %i and size is %li \n", si,  sizeof(short int ));
-    printf("unsigned short int usi = %i and size is %li \n", usi,  sizeof(unsigned short int ));
-    printf("int inum = %i and size is %li \n", inum,  sizeof(inum ));
-    printf("unsigned int ui = %i and size is %li \n", ui,  sizeof( ui));
-    printf("long int li = %li and size is %li \n", li,  sizeof(li ));
-    printf("unsigned long int uli = %li and size is %li \n", uli,  sizeof(uli ));
-    printf("float fnum = %f and size is %li \n", fnum,  sizeof(fnum ));
-    printf("double dnum = %f and size is %li \n", dnum,  sizeof(dnum ));
-    printf("long double ldnum = %Lf and size is %li \n", ldnum,  sizeof(ldnum ));
-    printf("char mychar = %c and size is %li \n", mychar,  sizeof( char));
-    printf("bool mybool = %i and size is %li \n", mybool,  sizeof(bool ));
+    printf("short int si = %i and size is %li, address is %p \n", si,  sizeof(short int ), &si);
+    printf("unsigned short int usi = %i and size is %li, address is %p  \n", usi,  sizeof(unsigned short int ), &usi);
+    printf("int inum = %i and size is %li, address is %p  \n", inum,  sizeof(inum ), &inum);
+    printf("unsigned int ui = %i and size is %li, address is %p  \n", ui,  sizeof( ui), &ui);
+    printf("long int li = %li and size is %li, address is %p  \n", li,  sizeof(li ), &li);
+    printf("unsigned long int uli = %li and size is %li, address is %p  \n", uli,  sizeof(uli ), &uli);
+    printf("float fnum = %f and size is %li, address is %p  \n", fnum,  sizeof(fnum ), &fnum);
+    printf("double dnum = %f and size is %li, address is %p  \n", dnum,  sizeof(dnum ), &dnum);
+    printf("long double ldnum = %Lf and size is %li, address is %p  \n", ldnum,  sizeof(ldnum ), &ldnum);
+    printf("char mychar = %c and size is %li, address is %p  \n", mychar,  sizeof( char), &mychar);
+    printf("bool mybool = %i and size is %li, address is %p  \n", mybool,  sizeof(bool ), &mybool);
 
     //do arithmetic
     int lhs = 23;

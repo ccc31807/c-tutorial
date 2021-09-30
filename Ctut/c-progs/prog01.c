@@ -11,6 +11,9 @@ int main(int argc, char *argv[])
 {
     printf("Hello, World\n");
 
+    double play = (1.0 / 3.0) * 3.0;
+    printf("play is %lf\n", play);
+
     return 0;
 }
 

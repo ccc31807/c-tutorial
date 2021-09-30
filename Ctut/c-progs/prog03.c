@@ -6,9 +6,15 @@
 ***************************************/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
+    if (!(argc > 1))
+    {
+        printf("must be called with at east one argument, exiting\n");
+        exit(1);
+    }
     printf("Hello, ");
     int i = 0;
     while(argv[++i] != NULL)

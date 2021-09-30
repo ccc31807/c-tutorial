@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(int argc, char *argv[])
 {
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
     int max = RAND_MAX;
     printf("RAND_MAX = %d\n", max);
 
-    printf("\nInitialize, declare, and print an array of ten integers from 1 to 10\n");
+    printf("\nInitialize, declare, and print an array of 30 integers from 1 to 30\n");
     //declare array
     int myarray[30];
     //initialize array
@@ -26,8 +27,10 @@ int main(int argc, char *argv[])
     printf("\n");
 
 
+    //seed random
+    srand(time(0));
     //randomize myarray
-    printf("Randomize array of size 30\n");
+    printf("Randomize array of size 30, of integers from 0 to 99\n");
     for(int i = 0; i < 30; i++)
         myarray[i] = rand() % 100;
     for(int i = 0; i < 30; i++)
