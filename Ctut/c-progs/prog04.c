@@ -58,6 +58,10 @@ int main(int argc, char *argv[])
     printf("floatdiv is %f \n", floatdiv);
     printf("mod is %i \n", mod);
     
+    printf("assigning a negative number to an unsigned variable\n");
+    unsigned int test = -11;
+    printf("the answer to the test is %d\n", test
+
     return 0;
 }
 

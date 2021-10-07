@@ -12,8 +12,6 @@
 
 //variable and function declarations
 struct card {
-    //const char face[10];
-    //const char suit[10];
     const char *face;
     const char *suit;
 };
@@ -23,6 +21,7 @@ typedef struct card Card;
 void fillDeck(Card * const wDeck, const char *myFace[], const char *mySuit[]);
 void shuffle(Card * const wDeck );
 void deal(const Card * const wDeck );
+void printDeck(const Card * const wDeck);
 
 //main function
 int main(int argc, char *argv[])
@@ -36,7 +35,9 @@ int main(int argc, char *argv[])
     srand(time(NULL));
 
     fillDeck(deck, face, suit);
+    printDeck(deck);
     shuffle( deck );
+    printDeck(deck);
     deal( deck );
 
     return 0;
@@ -76,4 +77,12 @@ void deal(const Card * const wDeck )
             printf("~~~~~~~~~ %s ~~~~~~~~~\n", hand[i / 13]);
         printf("%10s of %-10s\n", wDeck[i].face, wDeck[i].suit);
     }
+}
+
+void printDeck(const Card * const wDeck)
+{
+    printf("The deck is:\n");
+    for(int i = 0; i < 52; i++)
+        printf("%s of %s\t", wDeck[i].face, wDeck[i].suit);
+    printf("\n");
 }

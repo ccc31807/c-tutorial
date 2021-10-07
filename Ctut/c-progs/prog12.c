@@ -11,9 +11,9 @@
 
 //variable and function declarations
 int getNum();
-int abs(int n); 
-bool isEven(int n);
-int gcd(int i, int j);
+int abs(int ); 
+bool isEven(int );
+int gcd(int , int );
 
 //main function
 int main(int argc, char *argv[])

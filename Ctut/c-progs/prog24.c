@@ -22,11 +22,20 @@ int main(int argc, char *argv[])
     printf("Hex values: n1 = %x, n2 = %x, n3 = %x\n", n1, n2, n3);
 
     printf("=============================================\n");
-    printf("%o, %o, %o\n", n1 & n2, n1 | n2, n1 ^ n2);
-    printf("%o, %o, %o\n", ~n1, ~n2, ~n3);
-    printf("%o, %o, %o\n", n1 ^ n1, n1 & ~n2, n1 | n2 | n3);
-    printf("%o, %o\n", n1 | (n2 & n3), n1 | (n2 & ~n3));
-    printf("%o, %o\n", ~(~n1 & ~n2), ~(~n1 | ~n2));
+    printf(" OCTAL: n1 & n2 = %o, n1 | n2 = %o, n1 ^ n2 = %o\n", n1 & n2, n1 | n2, n1 ^ n2);
+    printf(" DECIMAL: n1 & n2 = %d, n1 | n2 = %d, n1 ^ n2 = %d\n", n1 & n2, n1 | n2, n1 ^ n2);
+
+    printf(" OCTAL: ~n1 = %o, ~n2 = %o, ~n3 = %o\n", ~n1, ~n2, ~n3);
+    printf(" DECIMAL: ~n1 = %d, ~n2 = %d, ~n3 = %d\n", ~n1, ~n2, ~n3);
+
+    printf(" OCTAL: n1 ^ n1 = %o, n1 & ~n2 = %o, n1 | n2 | n3 = %o\n", n1 ^ n1, n1 & ~n2, n1 | n2 | n3);
+    printf(" DECIMAL: n1 ^ n1 = %d, n1 & ~n2 = %d, n1 | n2 | n3 = %d\n", n1 ^ n1, n1 & ~n2, n1 | n2 | n3);
+
+    printf(" OCTAL: n1 | (n2 & n3) = %o, n1 | (n2 & ~n3) = %o\n", n1 | (n2 & n3), n1 | (n2 & ~n3));
+    printf(" DECIMAL: n1 | (n2 & n3) = %d, n1 | (n2 & ~n3) = %d\n", n1 | (n2 & n3), n1 | (n2 & ~n3));
+
+    printf(" OCTAL: ~(~n1 & ~n2) = %o,  ~(~n1 | ~n2)) = %o\n", ~(~n1 & ~n2), ~(~n1 | ~n2));
+    printf(" DECIMAL: ~(~n1 & ~n2) = %d,  ~(~n1 | ~n2)) = %d\n", ~(~n1 & ~n2), ~(~n1 | ~n2));
 
     printf("=============================================\n");
     printf("Swapping values: n1 = %o, n2 = %o\n", n1, n2);

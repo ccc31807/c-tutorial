@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
     printf("Hello, %s\n", argv[1]);
+    printf("The name of the program is, %s\n", argv[0]);
 
     return 0;
 }
